@@ -1,0 +1,28 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Landing page using HTML5, CSS3, BEM, SASS and GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jaac97/cafeteria.git"
+  },
+  "keywords": [
+    "Landing",
+    "page",
+    "SASS",
+    "GULP"
+  ],
+  "author": "Josué Alarcón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaac97/cafeteria/issues"
+  },
+  "homepage": "https://github.com/jaac97/cafeteria#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
