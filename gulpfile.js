@@ -12,7 +12,7 @@ const sass = require('gulp-sass')(require('sass'));
 // paths
 const paths = {
     styles: {
-        src: 'src/scss/*.scss',
+        src: 'src/scss/**/*.scss',
         dest: './build/css/'
     }
 }
@@ -22,8 +22,10 @@ const css = (done) => {
             // Pasos 1: Identificar archivos 
     return src(paths.styles.src)
         // Pasos 2: Compilarla
-        .pipe(sass())
-        .pipe( postcss([autoprefixer]) )
+        .pipe(sass({
+            outputStyle: "compressed"
+        }))
+        // .pipe( postcss([autoprefixer]) )
         // Pasos 3: Guardar el css
         .pipe(dest(paths.styles.dest))
         done()
@@ -33,9 +35,7 @@ const dev = () => {
     watch(paths.styles.src, css)
 }
 
-const tareaDefault = () => {
-    console.log("Algo")
-}
+
 exports.css = css;
 exports.dev = dev;
 exports.default = series(css, dev);
