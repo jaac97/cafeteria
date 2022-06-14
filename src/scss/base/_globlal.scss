@@ -12,46 +12,32 @@ html {
 }
 
 body {
-    font-family: v.$mainFont;
+    font-family: v.$secondaryFont;
     font-size: 1.6rem;
-
+    background-color: v.$lighBrown;
 }
 
-p {
-    color: v.$black
-}
+
 
 a {
     text-decoration: none;
 }
 
-img {
+img{
     max-width: 100%;
     display: block;
 }
-
+/* source {
+    max-width: 100%;
+    display: block;  
+} */
 .container {
-    width: clamp(120rem, 95%, 95%);
+    width: min(120rem, 95%); 
     margin: 0 auto;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0 0 v.$spacing 0;
-}
-
-h1 {
-    font-size: 4rem;
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 3.6rem;
-    font-size: 2.6rem;
-}
-
-h3 {
-    font-size: 3.2rem;
-    font-size: 2.2rem;
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
 }

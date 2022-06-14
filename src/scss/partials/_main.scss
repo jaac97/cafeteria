@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.main {
+    background-color: v.$white;
+    position: relative;
+    padding: 2rem;
+    @include m.tablet {
+        top: -10rem;
+        z-index: 10;
+        padding: 10rem
+    }
+}
+.main__heading {
+    color: v.$primary;
+    font-size: 3.6rem;
+    &::after {
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        background-image: url('../img/cafe.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+}
+.main__heading--span {
+    color: v.$secondary;
+    display: block;
+    font-size: 1.8rem;
+}
+
+.icons {
+    margin-top: v.$spacing; 
+    @include m.tablet {
+        @include m.grid(3, v.$spacing);
+    }
+}
+.icon__imagen {
+    margin: 0 auto;
+    width: 12rem;
+}
+
+.icon__text {
+    font-family: v.$thirdFont;
+    font-size: 3.2rem;
+    color: v.$primary;
+}

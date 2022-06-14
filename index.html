@@ -8,26 +8,137 @@
     <title>Cafetería</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
-  <header class="header header--home">
-      <div class="header__content container">
-          <div class="header__bar">
-              <div class="header__logo"></div>
-              <nav class="nav">
-                  <a href="index.html" class="nav__a">Home</a>
-                  <a href="aboutUs.html" class="nav__a">About Us</a>
-                  <a href="process.html" class="nav__a">Process</a>
-                  <a href="menu.html" class="nav__a">Menu</a>
-                  <a href="galery.html" class="nav__a">Galery</a>
-                  <a href="contact.html" class="nav__a">Contact</a>
-              </nav>
-          </div>
-      </div>
-  </header>
+    <header class="header header--home">
+        <div class="header__content container">
+            <div class="header__bar">
+                <div class="header__logo">
+                    <img class="header__logoImg" src="build/img/logo.svg" alt="logo café">
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__a nav__a--activo">Home</a>
+                    <a href="aboutUs.html" class="nav__a">About Us</a>
+                    <a href="process.html" class="nav__a">Process</a>
+                    <a href="menu.html" class="nav__a">Menu</a>
+                    <a href="galery.html" class="nav__a">Galery</a>
+                    <a href="contact.html" class="nav__a">Contact</a>
+                </nav>
+            </div>
+            <h1 class="header_heading">Enjoy a delicious cup of coffee</h1>
+        </div>
+    </header>
+    <!-- About Us -->
+    <main class="container main text-center">
+        <section class="main__content">
+            <h2 class="main__heading"><span class="main__heading--span">Know more</span> About us</h2>
+            <p class="main__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet ullam delectus, facere error hic
+                sapiente necessitatibus perspiciatis assumenda, maxime tenetur cupiditate minima quibusdam, corporis aut
+                excepturi optio. Tempore, nemo?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga minima veritatis laudantium
+                reprehenderit aut! Aut soluta illo neque modi, iusto sapiente, quia iste ducimus qui aliquam ratione
+                nisi corrupti!
+            </p>
+        </section>
+        <section class="main__icons">
+            <ul class="icons">
+                <li class="icon">
+                    <img class="icon__imagen" src="build/img/icono_cafe.svg" alt="icono café">
+                    <p class="icon__text">Café</p>
+                </li>
+                <li class="icon">
+                    <img class="icon__imagen" src="build/img/icono_postre.svg" alt="icono café">
+                    <p class="icon__text">Postre</p>
+                </li>
+                <li class="icon">
+                    <img class="icon__imagen" src="build/img/icono_te.svg" alt="icono café">
+                    <p class="icon__text">Té</p>
+                </li>
+            </ul>
+        </section>
+        <section class="experience">
+            <h2 class="main__heading"><span class="main__heading--span">Know more</span> About us</h2>
+            <div class="galery">
+                <picture class="galery__photos galery__photos--one">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_01.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_01.webp" type="image/webp" />
+                    <img class="galery__img galery__img--height" loading="lazy" decoding="async" src="build/img/galeria/galeria_01.jpg"
+                        lazyalt="galeria/galeria_01.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--two">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_02.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_02.webp" type="image/webp" />
+                    <img class="galery__img galery__img--width" loading="lazy" decoding="async" src="build/img/galeria/galeria_02.jpg"
+                        lazyalt="galeria/galeria_02.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--three">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_03.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_03.webp" type="image/webp" />
+                    <img class="galery__img" loading="lazy" decoding="async" src="build/img/galeria/galeria_03.jpg"
+                        lazyalt="galeria/galeria_03.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--four">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_04.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_04.webp" type="image/webp" />
+                    <img class="galery__img galery__img--height" loading="lazy" decoding="async" src="build/img/galeria/galeria_04.jpg"
+                        lazyalt="galeria/galeria_04.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--five">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_05.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_05.webp" type="image/webp" />
+                    <img class="galery__img galery__img--width" loading="lazy" decoding="async" src="build/img/galeria/galeria_05.jpg"
+                        lazyalt="galeria/galeria_05.avif" width="500" height="300">
+                </picture>
+                
+                <picture class="galery__photos galery__photos--six">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_06.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_06.webp" type="image/webp" />
+                    <img class="galery__img galery__img--width" loading="lazy" decoding="async" src="build/img/galeria/galeria_06.jpg"
+                        lazyalt="galeria/galeria_06.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--seven">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_07.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_07.webp" type="image/webp" />
+                    <img class="galery__img galery__img--height" loading="lazy" decoding="async" src="build/img/galeria/galeria_07.jpg"
+                        lazyalt="galeria/galeria_07.avif" width="500" height="300">
+                </picture>
+                
+                <picture class="galery__photos galery__photos--eight">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_08.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_08.webp" type="image/webp" />
+                    <img class="galery__img galery__img--width-2" loading="lazy" decoding="async" src="build/img/galeria/galeria_08.jpg"
+                        lazyalt="galeria/galeria_08.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--nine">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_09.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_09.webp" type="image/webp" />
+                    <img class="galery__img galery__img--width" loading="lazy" decoding="async" src="build/img/galeria/galeria_09.jpg"
+                        lazyalt="galeria/galeria_09.avif" width="500" height="300">
+                </picture>
+
+                <picture class="galery__photos galery__photos--ten">
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_10.avif" type="image/avif" />
+                    <source media="(min-width: 600px)" srcset="build/img/galeria/galeria_10.webp" type="image/webp" />
+                    <img class="galery__img galery__img--width" loading="lazy" decoding="async" src="build/img/galeria/galeria_10.jpg"
+                        lazyalt="galeria/galeria_10.avif" width="500" height="300">
+                </picture>
+            </div>
+        </section>
+
+    </main>
+    <script src="build/js/imagenes.js"></script>
 
 </body>
 
