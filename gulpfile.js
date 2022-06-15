@@ -51,14 +51,20 @@ const images = () => {
 }
 
 const webpVersion = () => {
+    const options = {
+        quality: 50
+    }
     return src(paths.images.webpSrc)
-        .pipe(webp())
+        .pipe(webp(options))
         .pipe(dest(paths.images.dest))
 }
 
 const avifVersion = () => {
+    const options = {
+        quality: 50
+    }
     return src(paths.images.avifSrc)
-        .pipe(gulpAvif())
+        .pipe(gulpAvif( options))
         .pipe(dest(paths.images.dest))
 }
 const dev = () => {
