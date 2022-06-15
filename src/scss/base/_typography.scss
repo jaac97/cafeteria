@@ -1,5 +1,5 @@
+@use 'base/variables'as v;
 
-@use 'base/variables' as v;
 h1,
 h2,
 h3 {
@@ -22,8 +22,47 @@ h2 {
 
 h3 {
     font-size: 3.2rem;
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
 }
+
+// Seleciona todos los elementos que terminen en heading
+[class$="__heading"] {
+    color: v.$primary;
+    font-size: 3.6rem;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        background-image: url('../img/cafe.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+}
+
+[class$="__heading--span"] {
+    color: v.$secondary;
+    display: block;
+    font-size: 1.8rem;
+}
+
+// modifica los elmentos h2 y extienda la clase
+[class$="__heading--blanco"] {
+    @extend [class$="__heading"];
+    color: v.$white;
+    &::after {
+        display: none
+    }
+}
+// modifica los elmentos span y extienda la clase
+[class$="menu__heading--span-blanco"] {
+    @extend [class$="__heading--span"];
+    color: v.$white;
+
+}
+
 p {
     color: v.$black;
     font-size: 1.6rem;

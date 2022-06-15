@@ -1,0 +1,56 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.menu {
+    background-image: url('../img/menu_arriba.svg'), url('../img/menu_abajo.svg'), linear-gradient(to bottom, v.$primary, v.$primary);
+    background-repeat: no-repeat;
+    background-position: center 5rem, center 90%, 100%;
+    background-size: 200%;
+    padding: 15rem 5rem 20rem 5rem;
+
+    @include m.tablet {
+        padding: 15rem 0 20rem;
+        background-size: 100%;
+        margin-top: -10rem;
+    }
+
+    @include m.desktop {
+        background-size: 50%, 50%, 100%;
+    }
+}
+
+.menu__grid {
+    @include m.tablet {
+        @include m.grid(2, 2rem)
+    }
+}
+
+.menu__container {
+    color: v.$white;
+}
+
+.food,
+.coffee {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+[class$="__name"],
+[class$="__price"] {
+    font-size: 2.2rem;
+    color: v.$white;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+[class$="__price"] {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+[class$="__description"] {
+    display: block;
+    color: v.$secondary;
+}

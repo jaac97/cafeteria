@@ -36,7 +36,7 @@ const css = () => {
         .pipe(sass({
             // outputStyle: "compressed"
         }))
-        // .pipe( postcss([autoprefixer]) )
+        .pipe(postcss([autoprefixer]))
         // Pasos 3: Guardar el css
         .pipe(dest(paths.styles.dest))
 

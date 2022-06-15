@@ -10,25 +10,8 @@
         padding: 10rem
     }
 }
-.main__heading {
-    color: v.$primary;
-    font-size: 3.6rem;
-    &::after {
-        content: '';
-        display: block;
-        width: 10rem;
-        height: 10rem;
-        background-image: url('../img/cafe.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-    }
-}
-.main__heading--span {
-    color: v.$secondary;
-    display: block;
-    font-size: 1.8rem;
-}
+
+
 
 .icons {
     margin-top: v.$spacing; 
