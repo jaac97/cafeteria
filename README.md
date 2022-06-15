@@ -5,22 +5,19 @@ This is a solution to the [Coffee Shop Lading page with BEM and SASS](https://ww
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
-    -[Desktop](#desktop)
-    -[Mobile](#mobile)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 
 - [Author](#author)
+- [Screenshot](#screenshot)
+    - [Mobile](#mobile)
 
 
 
 ## Overview
 
-### Screenshot
-#### Mobile
-![](./mobile.png)
+
 
 
 
@@ -48,4 +45,8 @@ This is a solution to the [Coffee Shop Lading page with BEM and SASS](https://ww
 - LinkedIn - [Josué Alarcón](https://www.linkedin.com/in/josue-alarcon-camino/)
 - Github - [@jaac97](https://github.com/jaac97)
 - Frontend Mentor - [@jaac97](https://www.frontendmentor.io/profile/jaac97)
+
+### Screenshot
+#### Mobile
+![](./mobile.png)
 
