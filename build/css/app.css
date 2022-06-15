@@ -748,5 +748,52 @@ p {
   text-align: right;
   font-family: "Bona Nova", serif;
   color: #5E311E;
+  font-size: 2.4rem;
+}
+
+.footer {
+  background-color: #5E311E;
+}
+
+.footer__content {
+  background-color: #FFF;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.footer__box {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__box {
+    margin-bottom: 0;
+  }
+}
+
+.footer__head {
+  font-family: "Bona Nova", serif;
+  font-size: 2.4rem;
+  color: #C39C63;
+  margin: 0 0 1rem;
+  font-weight: 400;
+}
+
+.footer__text {
+  margin: 0;
   font-size: 2rem;
+}
+
+.copyright {
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+  padding: 2rem 0;
 }
